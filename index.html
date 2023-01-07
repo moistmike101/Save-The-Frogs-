@@ -18,27 +18,37 @@
             .container {
                 width: 960px;
             }
-            .header{
+
+            .header {
                 background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg) !important;
                 background-size: cover !important;
-                
+
             }
-            .three-column{
+
+            .three-column {
                 background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg) !important;
-                background-size:cover  !important;
+                background-size: cover !important;
                 padding-left: 138px !important;
             }
-            .middle-column{
+
+            .middle-column {
                 padding-left: 138px !important;
             }
-            .grant-frog{
+
+            .grant-frog {
                 padding: 0 0 10px 20px !important;
             }
-            .grant-body{
+
+            .grant-body {
                 padding-left: 100px !important;
             }
-            .icon-social{
-             align-items: left;
+
+            .icon-social {
+                align-items: left;
+            }
+
+            .grant {
+                width: 960px !important;
             }
         }
 
@@ -47,14 +57,49 @@
                 width: 600px;
 
             }
+            
 
         }
 
         @media only screen and (max-width: 600px) {
             .container {
                 width: 100%;
+
             }
-            
+
+
+            .middle-column {
+                width: 100%;
+            }
+
+            .middle-column .left-column {
+                width: 100%;
+            }
+
+            .middle-column .left-column img {
+                width: 100%;
+            }
+
+            .middle-column .left-column p {
+                width: 500px !important;
+            }
+
+            .three-column .left-column {
+                width: 100%;
+            }
+
+            .three-column .left-column img {
+                width: 100%;
+            }
+
+            .three-column .left-column p {
+                width: 500px !important;
+            }
+
+            .left-column .frog-grant{
+                padding: 10px 0 10px 42px !important;
+            }
+
         }
     </style>
 </head>
@@ -66,24 +111,26 @@
             <td>
                 <!--start of container-->
                 <table class="container" width="600" cellspacing="0" cellpadding="0" border="0" align="center"
-                style="background-color: #a3a3a3;" >
+                    style="background-color: #ffffff;">
 
 
 
                     <!--Start of Header row-->
                     <tr>
-                        <td class="header" style="background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg)">
+                        <td class="header"
+                            style="background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg)">
                             <table class="header" width="100%" cellspacing="0" cellpadding="0" border="0"
                                 align="center">
                                 <tr>
                                     <td align="center">
-                                        <img src="https://i.ibb.co/t3kb8XX/savethefrog-icon.png" alt="savethefrog-icon" style="padding: 15px 0 25px 0;">
+                                        <img src="https://i.ibb.co/t3kb8XX/savethefrog-icon.png" alt="savethefrog-icon"
+                                            style="padding: 15px 0 25px 0;">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <img src="https://i.ibb.co/nwjyBcM/section1-frog.png" alt="section1-frog" style="padding-bottom: 50px;"
-                                            width="500">
+                                        <img src="https://i.ibb.co/nwjyBcM/section1-frog.png" alt="section1-frog"
+                                            style="padding-bottom: 50px;" width="500">
                                     </td>
                                 </tr>
                             </table>
@@ -121,13 +168,14 @@
                     <!--Start of three column row-->
                     <!--Start of row one-->
                     <tr>
-                        <td class="three-column" width="100%" cellspacing="0" cellpadding="0" border="0" align="center"
+                        <td class="three-column" width="100%" cellspacing="0" cellpadding="0" border="0" align="left"
                             style="font-family: 'Urbanist', sans-serif; background: #f3f3f3; padding: 40px;
                         background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg)">
                             <!--start of left one-->
                             <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
-                                align="left" style="font-family: 'Urbanist', sans-serif; padding: px; background-color: #ffffff;
-                            padding-bottom: 20px; padding-left: 10px;">
+                                align="left" style="font-family: 'Urbanist', sans-serif; background-color: #ffffff; 
+                                padding: 10px; padding-bottom: 20px;">
+
                                 <tr>
                                     <td>
                                         <h2 style="color: #81AD4F; padding-top: 5px;">Our Promise</h2>
@@ -136,7 +184,7 @@
                                             With your support and involvement, SAVE THE FROGS! will continue to empower
                                             the next generation of amphibian conservationists and introduce millions of
                                             people to the wild world of frogs.</p>
-                                        <a href="#" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
+                                        <a href="#" class="button" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
                                         color:#ffffff; background: rgb(225,138,56); font-size: small; padding: 6px;
                                         ">Learn More</a>
                                     </td>
@@ -146,8 +194,8 @@
                             <!--end of left column-->
 
                             <!--start of right column-->
-                            <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
-                                align="left" style="font-family: 'Urbanist', sans-serif; padding: px;">
+                            <table class="right-column" width="50%" cellspacing="0" cellpadding="0" border="0"
+                                align="left" style="font-family: 'Urbanist', sans-serif;">
                                 <tr>
                                     <td>
                                         <img src="https://i.ibb.co/nwjyBcM/section1-frog.png" alt="" width="225px"
@@ -161,12 +209,13 @@
                     </tr>
                     <!--start of row two-->
                     <tr>
-                        <td class="middle-column" width="100%" cellspacing="0" cellpadding="0" border="0" align="center"
+                        <td class="middle-column" cellspacing="0" cellpadding="0" border="0" align="center"
                             style="font-family: 'Urbanist', sans-serif; background: #f3f3f3; padding: 40px;">
                             <!--start of left one-->
                             <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
-                                align="left"
-                                style="font-family: 'Urbanist', sans-serif; padding: px; padding-bottom: 20px; padding-left: 10px;">
+                                align="left" style="font-family: 'Urbanist', sans-serif; background-color: #ffffff; 
+                                padding: 10px; padding-bottom: 20px;
+                            ">
                                 <tr>
                                     <td>
                                         <h2 style="color: #81AD4F; padding-top: 5px;">Our Values</h2>
@@ -175,7 +224,7 @@
                                             SAVE THE FROGS! members aspire to be Protectors, Lifelong Learners,
                                             Educators,
                                             Advocates, Ambassadors, Stewards, Voters, Volunteers and Contributors.</p>
-                                        <a href="#" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
+                                        <a href="#" class="button" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
                                         color:#ffffff; background: rgb(225,138,56); font-size: small; padding: 6px;
                                         ">Learn More</a>
                                     </td>
@@ -186,7 +235,7 @@
                             <!--end of left column-->
 
                             <!--start of right column-->
-                            <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
+                            <table class="right-column" width="50%" cellspacing="0" cellpadding="0" border="0"
                                 align="left" style="font-family: 'Urbanist', sans-serif; padding: px;">
                                 <tr>
                                     <td>
@@ -206,8 +255,8 @@
                         background-image: url(https://i.ibb.co/12bVhHG/chris-lee-70l1t-DAI6r-M-unsplash.jpg)">
                             <!--start of left one-->
                             <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
-                                align="left" style="font-family: 'Urbanist', sans-serif; padding: px; background: #f3f3f3;
-                            padding-bottom: 20px; padding-left: 10px;">
+                                align="left" style="font-family: 'Urbanist', sans-serif; background: #f3f3f3;
+                            padding: 10px; padding-bottom: 20px;">
                                 <tr>
                                     <td>
                                         <h2 style="color: #81AD4F; padding-top: 5px;">Our Purpose</h2>
@@ -218,7 +267,7 @@
                                             which programs
                                             and activities we should focus on to most throughy accomplish our amphibious
                                             mission.</p>
-                                        <a href="#" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
+                                        <a href="#" class="button" style="text-decoration: none; border: 4px solid rgb(130,173,78) ; border-radius: 20px;
                                         color:#ffffff; background: rgb(225,138,56); font-size: small; padding: 6px;
                                         ">Learn More</a>
                                     </td>
@@ -228,7 +277,7 @@
                             <!--end of left column-->
 
                             <!--start of right column-->
-                            <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0"
+                            <table class="right-column" width="50%" cellspacing="0" cellpadding="0" border="0"
                                 align="left" style="font-family: 'Urbanist', sans-serif;">
                                 <tr>
                                     <td>
@@ -242,13 +291,17 @@
                         </td>
                     </tr>
                     <!--End of three column row-->
-
-
-                    <!--Start of group photo row-->
                     <tr>
-                        <td>
+                        <td width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="color: white; font-family: 'Urbanist', sans-serif; background: rgb(130,173,78);
+                        background: linear-gradient(180deg, rgba(130,173,78,1) 0%, rgba(225,138,56,1) 100%);
+                        padding: 50px;">
+
+                            <!--Start of group photo row-->
+
                             <table class="group" width="100%" cellspacing="0" cellpadding="0" border="0" align="center"
                                 style="font-weight: 300; width: 240px; padding-bottom: 10px; font-size: 13px; color:black; line-height: 1.4em;">
+
+
                                 <tr>
                                     <td>
                                         <img src="https://i.ibb.co/wWL03n3/section5-group.png" alt="" width="500"
@@ -259,45 +312,49 @@
                                     <td align="right" style="font-weight: 300; width: 240px; padding-bottom: 10px; font-size: 13px; color:black; line-height: 1.4em;
                                     font-family: 'Urbanist', sans-serif;">
                                         <p><span style="font-weight:bold; font-size: 20px;">-</span>
-                                            Sarbani Nag, World Summit Organizer and Secretary of <br>SAVE THE FROGS!
+                                            Sarbani Nag, World Summit Organizer and Secretary of <br>SAVE
+                                            THE FROGS!
                                             India</p>
                                     </td>
                                 </tr>
                             </table>
 
+
+                            <!--End of group photo row-->
+
+                            <!--Start of donate row-->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="https://i.ibb.co/wRsdg4c/donate-today.png" alt="" width="500"
+                                            style="padding-bottom: 50px; padding-top: 10px;">
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
-                    <!--End of group photo row-->
+                            <!--End of group donate row-->
 
-                    <!--Start of donate row-->
-                    <tr>
-                        <td align="center">
-                            <img src="https://i.ibb.co/wRsdg4c/donate-today.png" alt="" width="500"
-                                style="padding-bottom: 50px; padding-top: 10px;">
-                        </td>
-                    </tr>
-                    <!--End of group donate row-->
 
-                    <!--Start of grant row-->
+                            <!--Start of grant row-->
                     <tr>
-                        <td height="5" style="background-color: rgb(138, 138, 138);"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-top: 25px; background-color: #333333 ;">
+                        <td  width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <table width="100%" style=" background-color: #333333 ;">
                                 <tr>
                                     <td>
-                                        <table class="grant-body"  width="50%" cellspacing="0" cellpadding="0" border="0" align="left"
+                                        <table class="middle-column"  width="50%" cellspacing="0" cellpadding="0" border="0"
+                                            align="left"
                                             style="font-family: 'Urbanist', sans-serif; padding-bottom: 35px; padding-left: 15px;">
                                             <tr>
-                                                <td class="grant-body" >
-                                                    <h2 style="color: #81AD4F;  padding: 0 0 0 25px;">Scholarship Applications</h2>
-                                                    <p 
+                                                <td class="left-column">
+                                                    <h1 style="color: #81AD4F;  padding: 0 0 0 25px; font-size: 20px;">Scholarship
+                                                        Applications</h1>
+                                                    <p
                                                         style="font-weight: 300; font-size: 13px; width: 250px; padding: 0 0 0 25px; line-height: 1.4em; color: #ffffff;">
                                                         SAVE THE FROGS! is pleased to offer scholarships to dedicated
                                                         environmental
                                                         conservationists with financial needs. Scholarships cover the
-                                                        entire cost of <span  style="color: rgba(225,138,56,1);">THE
+                                                        entire cost of <span style="color: rgba(225,138,56,1);">THE
                                                             FROGS! Membership</span> , giving
                                                         the recipient access to <span
                                                             style="color: rgba(225,138,56,1);">SAVE THE
@@ -309,11 +366,11 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table class="grant-frog" width="50%" cellspacing="0" cellpadding="0" border="0" align="0" >
+                                        <table width="50%" cellspacing="0" cellpadding="0" border="0" align="0">
                                             <tr>
-                                                <td class="grant-frog">
-                                                    <img src="https://i.ibb.co/44XGD2Z/grants.png" alt="" width="240"
-                                                        style="padding: 30px 0 0 20px;">
+                                                <td class="left-column" width="100%">
+                                                    <img class="frog-grant" src="https://i.ibb.co/44XGD2Z/grants.png" alt="" width="240"
+                                                        style="padding: 10px 0 0 15px;">
                                                 </td>
                                             </tr>
                                         </table>
@@ -330,54 +387,71 @@
 
                     <!--Start of footer row-->
                     <tr>
-                        <td >
-                            
+                        <td>
+
                             <table class="left-column" width="100%" cellspacing="0" cellpadding="0" border="0"
-                            align="left" style="font-family: 'Urbanist', sans-serif; background-color: #ffffff;
+                                align="left" style="font-family: 'Urbanist', sans-serif; background-color: #ffffff;
                             padding: 10px;">
-                            <tr>
-                                <td>
-                                    <p style="font-weight: 400; line-height: 1.3em;">SAVE THE FROGS! protect amphibian populations and empowers ordinary citizens to make 
-                                        extraordinary contributions to the betterment of the plant.
-                                    </p>
-                                    <a href="#"><img src="https://i.ibb.co/9g5ZMHJ/donate-frog-button.png"></a>
-                                    <p style="font-weight: 300;">"What the new year brings to you will depend a great deal on what you bring to the new year"
-                                        <br>- Vern McLellan
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" style="padding-right: 200px; padding-bottom: 20px; padding-top: 5px;">
-                                    <a href="#"><img src="https://i.ibb.co/brP2bDz/twitter-icon.png" width="40" class="icon-social"></a>
-                                    <a href="#"><img src="https://i.ibb.co/jk8cbHc/linkedin-icon.png" width="40" class="icon-social"></a>
-                                    <a href="#"><img src="https://i.ibb.co/ZfJTHTg/youtube-icon.png" width="40" class="icon-social"></a>
-                                    <a href="#"><img src="https://i.ibb.co/C983wds/insta-icon.png" width="40" class="icon-social"></a>
-                                    <a href="#"><img src="https://i.ibb.co/7z3f6wB/pin-icon.png" width="40" class="icon-social"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="5" style="background-color: #E58937;"
-                                style="padding-top: 20px;"></td>
-                            </tr>
-                            <tr>
-                                <td style="padding-top: 5px; padding-bottom: 50px;">
-                                    <p style="font-family: 'Urbanist', sans-serif; font-weight: 600; line-height: 1.3em; font-size: 13px;">
-                                        SAVE THE FROG!, 1968 S. Coast Hwy Suite 622, Laguna Beach, CA 92651, United States
-                                        <br>
-                                        You can <span><a href="#" style="color: #E58937;">subscribe to this newsletter here</a></span>.
-                                        <br>
-                                        You can switch to our <span><a href="#" style="color: #E58937;">subscribe to this newsletter here</a></span> here.
-                                        <br>
-                                        Don't want any future newsletter?
-                                        <br>
-                                        <span ><a href="#" style="font-weight: 300; color: #808080;">Unsubscribe</a></span> :(
-                                    </p>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>
+                                        <p style="font-weight: 400; line-height: 1.3em;">SAVE THE FROGS! protect
+                                            amphibian
+                                            populations and empowers ordinary citizens to make
+                                            extraordinary contributions to the betterment of the plant.
+                                        </p>
+                                        <a href="#"><img src="https://i.ibb.co/9g5ZMHJ/donate-frog-button.png"></a>
+                                        <p style="font-weight: 300;">"What the new year brings to you will depend a
+                                            great deal on
+                                            what you bring to the new year"
+                                            <br>- Vern McLellan
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="padding-right: 200px; padding-bottom: 20px; padding-top: 5px;">
+                                        <a href="#"><img src="https://i.ibb.co/brP2bDz/twitter-icon.png" width="40"
+                                                class="icon-social"></a>
+                                        <a href="#"><img src="https://i.ibb.co/jk8cbHc/linkedin-icon.png" width="40"
+                                                class="icon-social"></a>
+                                        <a href="#"><img src="https://i.ibb.co/ZfJTHTg/youtube-icon.png" width="40"
+                                                class="icon-social"></a>
+                                        <a href="#"><img src="https://i.ibb.co/C983wds/insta-icon.png" width="40"
+                                                class="icon-social"></a>
+                                        <a href="#"><img src="https://i.ibb.co/7z3f6wB/pin-icon.png" width="40"
+                                                class="icon-social"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="5" style="background-color: #E58937;" style="padding-top: 20px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 5px; padding-bottom: 50px;">
+                                        <p
+                                            style="font-family: 'Urbanist', sans-serif; font-weight: 600; line-height: 1.3em; font-size: 13px;">
+                                            SAVE THE FROG!, 1968 S. Coast Hwy Suite 622, Laguna Beach, CA 92651, United
+                                            States
+                                            <br>
+                                            You can <span><a href="#" style="color: #E58937;">subscribe to this
+                                                    newsletter
+                                                    here</a></span>.
+                                            <br>
+                                            You can switch to our <span><a href="#" style="color: #E58937;">subscribe to
+                                                    this
+                                                    newsletter here</a></span> here.
+                                            <br>
+                                            Don't want any future newsletter?
+                                            <br>
+                                            <span><a href="#"
+                                                    style="font-weight: 300; color: #808080;">Unsubscribe</a></span>
+                                            :(
+                                        </p>
+                                    </td>
+                                </tr>
 
                             </table>
                         </td>
-                    </tr>   
+                    </tr>
                     <!--End of footer row-->
 
 
